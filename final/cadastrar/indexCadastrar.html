@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form onsubmit="return salvarCadastro()">
+        <!-- maxlength="" -- máximo de caracter/numero  minlength="" -- minimo de caracter/numero  required -- serve para todos os tipos de input -->
+        <label>Nome: </label>
+        <input type="text" placeholder="Nome completo" id="caixaDeNome" minlength="3" maxlength="150" required> <br>
+        <label>Data: </label>
+        <input type="date" id="dataNascimento" required> <br>
+        <label>Email: </label>
+        <input type="email" placeholder="Email" id="caixaEmail" required> <br>
+        <label>CPF: </label>
+        <input type="text" placeholder="CPF" id="campoCpf" maxlength="11" required> <br>
+        <label>CNPJ:</label>
+        <input type="text" placeholder="CNPJ" id="campoCnpj" maxlength="14"> <br>
+        <label>Genero: </label>
+        <input type="text" placeholder="Genero" id="campoGenero" required> 
+        <!-- <button onclick="cadastro()">Cadastrar</button> -->
+        <button class=" button1">Cadastrar</button>
+    </form>
+    <br><br>
+
+    <a href="../consulta/indexConsulta.html">
+        <button class="button button1">Consulta</button>
+    </a>
+    <a href="../apresentacao.html">
+        <button class="button button1">Tela inicial</button>
+    </a>
+
+    <div id="tabelaDeCadastro"></div>
+    <script src="./scriptCadastro.js"></script>
+</body>
+
+</html>
