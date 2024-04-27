@@ -1,7 +1,20 @@
 body {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
+h2 {
+  position: absolute;
+  top: 30%;
+  padding-left: 70px;
+}
+
+main {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
 a {
     text-decoration: none;
     width: 2%;
@@ -14,21 +27,21 @@ label{
 input[type=text],
 input[type=email],
 input[type=password] {
-    width: 15%;
-    padding: 6px 10px;
-    margin: 5px 3x;
+    width: 250px;
+    padding: 6px;
+    margin: 5px;
     box-sizing: border-box;
 }
 
 input[type=date] {
-    width: 15%;
-    padding: 6px 10px;
+    width: 250px;
+    padding: 6px;
+  margin: 5px;
     box-sizing: border-box;
 }
 
 .button {
     border-radius: 12px;
-    ;
     padding: 15px 20px;
     text-align: center;
     display: inline-block !important;
